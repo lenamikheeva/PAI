@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<style type="text/css">
+		ul#menu {
+			float: left;
+			width: 10%;
+			list-style-type: none;
+		}
+
+		div#tresc {
+			float: left;
+			width: 85%;
+		}
+
+		div#tresc table span {
+			padding: 3px;
+		}
+	</style>
+</head>
+
+<body>
+	<form method="post" action="ustawienia.php"> 
+		<ul id="menu">
+			<li><a href="tekst.html">Tekst</a></li>
+			<li><a href="ustawienia.html">Ustawienia</a></li>
+		</ul>
+		<div id="tresc">
+			<table cellpadding="4">
+				<tr>
+					<td>Kolor tla strony:</td>
+					<td>
+						<input type="radio" name="kolor-tla" id="#BAFF49" value="#BAFF49" checked/> <span style="background-color:#BAFF49">#BAFF49</span><br />
+						<input type="radio" name="kolor-tla" id="#8E9BFF" value="#8E9BFF"/> <span style="background-color: #8E9BFF">#8E9BFF</span><br />
+						<input type="radio" name="kolor-tla" id="#FFEFBF" value="#FFEFBF"/> <span style="background-color: #FFEFBF">#FFEFBF</span><br />
+					</td>
+				</tr>
+				<tr>
+					<td>Krój czcionki:</td>
+					<td>
+						<select name="kroj-czcionki">
+							<option value="Verdana">Verdana</option>
+							<option value="Arial">Arial</option>
+							<option value="Courier New">Courier New</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Wielkość czcionki:</td>
+					<td><input type="text" name="wielkosc-czcionki" style="width: 30px" />px</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td><input type="submit" name="zapisz" value="Zapisz" /></td>
+				</tr>
+			</table>
+		</div>
+	</form>
+</body>
+
+</html>
