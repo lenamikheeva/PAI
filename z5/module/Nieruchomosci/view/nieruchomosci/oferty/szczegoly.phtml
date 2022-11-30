@@ -1,0 +1,17 @@
+<h2>Szczegóły oferty</h2>
+<table>
+<?php
+foreach ($oferta as $item => $value) {
+?>
+    <tr>
+        <td>
+        <strong>
+            <?= $item ?>
+        </strong>
+        <?= $value ?>
+        </td>
+    </tr>
+<?php
+}
+?>
+</table>
